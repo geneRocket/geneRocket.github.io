@@ -44,15 +44,30 @@
 
 <body>
     <div class="content">
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
-        <h2>晨瑞小姐姐</h2>
+        <h2>晨瑞小姐姐，我们在一起</h2>
+        <div class="timer">
+            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+        </div>
     </div>
+
+    <script>
+        function timer() {
+            var start = new Date(2021, 1, 23); // 2015.7.2
+            var t = new Date() - start;
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+
+            var m = ~~(t / 1000 / 60 % 60);
+
+            var s = ~~(t / 1000 % 60);
+
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('s').innerHTML = s;
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
 </body>
 
 </html>

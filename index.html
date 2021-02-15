@@ -12,25 +12,19 @@
         body {
             -webkit-font-smoothing: antialiased;
             font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('bg2.jpeg');
-            background-size:100%;
             font-size: 85%;
             margin: 0;
+            text-align:center;
         }
-        
+
+        .jpg img{
+            width:100%;
+            height:auto;
+        }
+
         h2 {
             font-size: 220%;
             font-weight: 400;
-        }
-        
-        .content {
-            position: absolute;
-            width: 100%;
-            top: 100%;
-            transform: translate(0, -50%);
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8);
-
         }
         
         .timer {
@@ -46,19 +40,27 @@
 </head>
 
 <body>
-    <div class="content">
-        <h2>宝贝老婆，自2021.1.23，我们在一起</h2>
-        <div class="timer">
-            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
-        </div>
-        <h2>我们曾经多次插肩而过</h2>
-        <h2>很幸运地最终牵手而行</h2>
-        <h2>希望</h2>
-        <h2>能和你分享所有的快乐与不快乐</h2>
-        <h2>能和你走过生活的坎坎坷坷</h2>
-        <h2>love ya</h2>
-        <h2></h2>
+    <div class="jpg">
+        <img src="bg2.jpeg">
+
+        <span class="content">
+            <h2>宝贝老婆，自2021.1.23，我们在一起</h2>
+            <div class="timer">
+                <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+            </div>
+            <h2>我们曾经多次插肩而过</h2>
+            <h2>很幸运地最终牵手而行</h2>
+            <h2>希望</h2>
+            <h2>能与你分享所有的快乐与不快乐</h2>
+            <h2>能与你走过生活的坎坎坷坷</h2>
+            <h2>能与你走到白头</h2>
+            <h2>love ya</h2>
+        </span>
+
+
     </div>
+
+
 
     <script>
         function timer() {
